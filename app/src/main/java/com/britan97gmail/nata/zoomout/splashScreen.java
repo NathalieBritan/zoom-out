@@ -82,7 +82,7 @@ public class splashScreen extends AppCompatActivity {
 
     private void setAnimDrawable()
     {
-        int[] logos = {R.drawable.logo1, R.drawable.logo2, R.drawable.logo3, R.drawable.logo4, R.drawable.logo5, R.drawable.logo6,
+        int[] logos = {R.drawable.logo1, R.drawable.logo2, R.drawable.logo3, R.drawable.logo4,R.drawable.logo5, R.drawable.logo6,
                 R.drawable.logo7, R.drawable.logo8, R.drawable.logo9, R.drawable.logo10};
         img = (ImageView)findViewById(R.id.videoView);
         mAnimation = new AnimationDrawable();
@@ -248,8 +248,6 @@ public class splashScreen extends AppCompatActivity {
                 //go to Main Menu
                 Intent intent = new Intent(splashScreen.this, MainMenu.class);
                 startActivity(intent);
-                mAnimation = null;
-                img.setImageDrawable(null);
                 finish();//to disable return to splash screen
             }
         }.execute(path.getAbsolutePath());
