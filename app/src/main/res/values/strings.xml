@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Zoom Out</string>
+    <string name="infoVideo">Tap to experience informative universe travel</string>
+    <string name="watchVideo">Tap to enjoy Earth zoom out</string>
+    <string name="backward">Back</string>
+    <string name="forward">Forw</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+</resources>
