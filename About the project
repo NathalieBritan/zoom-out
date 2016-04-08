@@ -1,0 +1,48 @@
+I came up with the idea to create the app that shows the beauty and majesty of the Universe itself.
+First things first, the main goal of the application is to show that science and astrophysics as well
+can be exciting and absorbing even as the way of passtime beyond the educational side.
+Form the oprional side the app offers two actions: 
+- to watch the whole zoom out music video;
+- to experience zoom in/out travel with short information about some space 
+objects.
+The journey starts from the Earth gradually zooming out with informative stations at space objects on its
+way to the borders of observal universe. You can discover 8 new facts about the Universe and one more 
+the 9th very reality, that is considered to be the most mind blowing and breathtaking thing about the Universe 
+and life itself.
+From the side of app's construction, it has 4 activities:
+- splash screen during the loading necessary data for app functionality in its first run, and during the 
+unpacking of the usable data in its every run;
+- the main menu screen with two options
+- the screen to watch the whole music video;
+- the screen with zoom in/out buttons.
+To actually run the application for the first time, you'll need to have the Internet connection. Every next 
+run you'll be able to zoom in/out without Internet access, but still you'll need it to watch the whole music 
+video.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
