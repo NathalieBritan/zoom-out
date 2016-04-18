@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".splashScreen"
+            android:name=".SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
 
@@ -36,12 +36,12 @@
         </activity>
 
         <activity
-            android:name=".zoomActivity"
+            android:name=".ZoomInOut"
             android:screenOrientation="landscape">
         </activity>
 
         <activity
-            android:name=".fullVideo"
+            android:name=".ShowFullVideo"
             android:screenOrientation="landscape">
         </activity>
 

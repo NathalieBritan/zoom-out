@@ -5,21 +5,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.graphics.Bitmap;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
-import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.widget.ImageView;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -33,11 +28,12 @@ import java.net.URL;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-public class splashScreen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     private SharedPreferences prefs = null;
-    private ImageView img;
-    private AnimationDrawable mAnimation;
+    private ImageView imageViewPlanet;
+    private AnimationDrawable animationPlanet;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +44,8 @@ public class splashScreen extends AppCompatActivity {
         setAnimDrawable();//set logo
 
         prefs = getSharedPreferences("PrefsFile", 0);//to check the first run
-
-        File root = Environment.getExternalStorageDirectory();
+        context = getBaseContext();
+        File root = context.getFilesDir();
         //create folder for videos if there's no one
         File dir = new File(root.getAbsolutePath() + "/ZoomOut");
         if (!dir.exists())
@@ -58,7 +54,6 @@ public class splashScreen extends AppCompatActivity {
         }
 
         //to check Internet connection
-        Context context = getBaseContext();
         ConnectivityManager cm = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
@@ -84,15 +79,15 @@ public class splashScreen extends AppCompatActivity {
     {
         int[] logos = {R.drawable.logo1, R.drawable.logo2, R.drawable.logo3, R.drawable.logo4,R.drawable.logo5, R.drawable.logo6,
                 R.drawable.logo7, R.drawable.logo8, R.drawable.logo9, R.drawable.logo10};
-        img = (ImageView)findViewById(R.id.videoView);
-        mAnimation = new AnimationDrawable();
+        imageViewPlanet = (ImageView)findViewById(R.id.videoView);
+        animationPlanet = new AnimationDrawable();
         for(int i = 0; i < 10; i++)
         {
-            mAnimation.addFrame((BitmapDrawable) getResources().getDrawable(logos[i]),100);
+            animationPlanet.addFrame((BitmapDrawable) getResources().getDrawable(logos[i]), 100);
         }
-        mAnimation.setOneShot(false);
-        img.setImageDrawable(mAnimation);
-        mAnimation.start();
+        animationPlanet.setOneShot(false);
+        imageViewPlanet.setImageDrawable(animationPlanet);
+        animationPlanet.start();
     }
 
     public void Load(final String url, final String fileName, final File dir)
@@ -246,7 +241,7 @@ public class splashScreen extends AppCompatActivity {
                     return;
                 }
                 //go to Main Menu
-                Intent intent = new Intent(splashScreen.this, MainMenu.class);
+                Intent intent = new Intent(SplashScreen.this, MainMenu.class);
                 startActivity(intent);
                 finish();//to disable return to splash screen
             }

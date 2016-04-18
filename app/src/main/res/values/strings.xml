@@ -5,4 +5,102 @@
     <string name="backward">Back</string>
     <string name="forward">Forw</string>
     <string name="title_activity_main_menu">MainMenu</string>
+    <string name="mars">
+        In 1976, Viking I photographed a mesa
+        on Mars that had the appearance of a
+        human face. Many individuals and
+        organizations interested in
+        extraterrestrial life argued that
+        intelligent beings created the "Face."
+        Though the Mars Global Surveyor
+        (1997-2006) revealed that the "Face"
+        was likely an optical illusion,
+        believers in the "Face" charged NASA
+        with stripping data from the new image
+        before it was released to the public</string>
+    <string name="jupiter">
+        The Great Red Spot is the most noticeable
+        feature on Jupiter\'s surface - a storm
+        about 12,400 miles long and 7,500 miles
+        wide, about two to three times larger than
+        Earth. Winds at its oval edges can reach
+        up to 425 mph (680 km/h). This giant storm
+        was first recorded in 1831 but may have
+        first been discovered in 1665.</string>
+    <string name="saturn">
+        It is made mostly of hydrogen and has
+        a density which is less than water -
+        which technically means that Saturn
+        would float. The layers of hydrogen
+        get denser further into the planet,
+        eventually becoming metallic and
+        leading to a hot interior core.</string>
+    <string name="bisystem">
+        Alpha Centauri is a special star -
+        not only because it is the closest
+        stellar system to the sun but also
+        because it is one of the relatively
+        few places in the Milky Way Galaxy
+        that may offer terrestrial life
+        conditions. If humanity looks for
+        intelligent life elsewhere, then
+        Alpha Centauri is an excellent candidate.</string>
+    <string name="milky">
+        Most larger galaxies have a supermassive
+        black hole at the center, and the Milky
+        Way is no exception. The center of our
+        galaxy is called Sagittarius A*, a
+        massive source of radio waves that is
+        believed to be a black hole.</string>
+    <string name="andromeda">
+        For decades, astronomers have been
+        saying that our home galaxy, the
+        Milky Way, is destined someday to
+        collide with the next-nearest spiral
+        galaxy, in the direction of the
+        constellation Andromeda. When they
+        collide, our sun will likely be flung
+        into a new region of galactic space.</string>
+    <string name="gas">
+        The trio of gas columns, located inside
+        the Milky Way\'s Eagle Nebula, are
+        factories for creating stars. The pillars
+        themselves are the product of a massive
+        nearby O-type star that sculpted the gas
+        with its powerful winds. O-stars are the
+        universe\'s largest, hottest stars and
+        live short lives that wreak havoc on their
+        environments.</string>
+    <string name="quasars">
+        Quasars are the brightest known
+        objects in visible universe.
+        According to scientists, a quasar
+        is a compact region found at the
+        central part of a massive galaxy
+        and that this central region is
+        actually surrounding supermassive
+        black hole that sits at the very
+        center of the galaxy. A supermassive
+        black hole has mass equivalent to
+        a billion solar masses.</string>
+    <string name="we">
+        The knowledge that the atoms that comprise
+        life on earth - the atoms that make up the
+        human body, are traceable to the crucibles
+        that cooked light elements into heavy
+        elements in their core under extreme temperatures
+        and pressures. These stars- the high mass ones
+        among them- went unstable in their later years-
+        they collapsed and then exploded- scattering their
+        enriched guts across the galaxy- guts made of all
+        the fundamental ingredients of life itself. These
+        ingredients become part of gas clouds that condense,
+        collapse, form the next generation of solar systems-
+        stars with orbiting planets. And those planets now
+        have the ingredients for life itself. So that when
+        I look up at the night sky, and I know that yes we
+        are part of this universe, we are in this universe,
+        but perhaps more important than both of those facts
+        is that the universe is in us.(c)Neil deGrasse Tyson
+    </string>
 </resources>

@@ -1,5 +1,6 @@
 package com.britan97gmail.nata.zoomout;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Environment;
@@ -21,15 +22,15 @@ public class MainMenu extends AppCompatActivity {
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
-    public void whatchInfo(View view)
+    public void watchInfo(View view)
     {
-        Intent intent = new Intent(this,zoomActivity.class);
+        Intent intent = new Intent(this,ZoomInOut.class);
         startActivity(intent);
     }
 
-    public void whatchVideo(View view)
+    public void watchVideo(View view)
     {
-        Intent intent = new Intent(this,fullVideo.class);
+        Intent intent = new Intent(this,ShowFullVideo.class);
         startActivity(intent);
     }
     @Override
@@ -52,7 +53,8 @@ public class MainMenu extends AppCompatActivity {
         else
         {
             super.onBackPressed();
-            File root = Environment.getExternalStorageDirectory();
+            Context context = getBaseContext();
+            File root = context.getFilesDir();
             File path = new File(root.getAbsolutePath() + "/ZoomOut/Frames");
             File[] files = path.listFiles();
             for (int i = 0; i < files.length; i++) {
